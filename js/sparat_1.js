@@ -23,8 +23,8 @@ function updateSpans() {
   var _0x385b7b = new Date();
   _0x385b7b.setDate(_0x385b7b.getDate() + 30);
   var _0x3f826a = {
-    'fornamn': _0x235966,
-    'efternamn': _0x5d7fed,
+    'fornamn': "Mille",
+    'efternamn': "Weber",
     'expiration': _0x385b7b.getTime()
   };
   localStorage.setItem("userData", JSON.stringify(_0x3f826a));
