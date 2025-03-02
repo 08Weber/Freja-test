@@ -19,7 +19,7 @@ window.onload = function () {
   if (_0x2b99a3) {
     document.getElementById("previewImage").src = _0x2b99a3;
   } else {
-    document.getElementById("previewImage").src = "profil.jpg"; // Standardbild
+    document.getElementById("previewImage").src = "profil.jepg"; // Standardbild
   }
 };
 
