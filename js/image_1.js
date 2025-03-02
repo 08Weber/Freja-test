@@ -15,12 +15,14 @@ document.getElementById("imageInput").addEventListener("change", function () {
 
 // Sätter en standardbild (profil.jpg) om ingen bild finns sparad i localStorage
 window.onload = function () {
-  var _0x2b99a3 = localStorage.getItem("uploadedImage");
-  if (_0x2b99a3) {
-    document.getElementById("previewImage").src = _0x2b99a3;
-  } else {
-    document.getElementById("previewImage").src = "profil.jepg"; // Standardbild
-  }
+    var savedImage = localStorage.getItem("uploadedImage");
+    var previewImage = document.getElementById("previewImage");
+
+    if (savedImage) {
+        previewImage.src = savedImage;
+    } else {
+        previewImage.src = "profil.jepg"; // Se till att sökvägen är rätt
+    }
 };
 
 document.getElementById("imageInput").addEventListener("change", function (_0x17695f) {
