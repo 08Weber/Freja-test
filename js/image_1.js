@@ -1,6 +1,7 @@
 function openImageInput() {
   document.getElementById("imageInput").click();
 }
+
 document.getElementById("imageInput").addEventListener("change", function () {
   var _0x4b6d23 = this.files[0];
   if (_0x4b6d23) {
@@ -11,12 +12,17 @@ document.getElementById("imageInput").addEventListener("change", function () {
     _0x32b266.readAsDataURL(_0x4b6d23);
   }
 });
+
+// Sätter en standardbild (profil.jpg) om ingen bild finns sparad i localStorage
 window.onload = function () {
   var _0x2b99a3 = localStorage.getItem("uploadedImage");
   if (_0x2b99a3) {
     document.getElementById("previewImage").src = _0x2b99a3;
+  } else {
+    document.getElementById("previewImage").src = "profil.jpg"; // Standardbild
   }
 };
+
 document.getElementById("imageInput").addEventListener("change", function (_0x17695f) {
   var _0x2667ea = _0x17695f.target.files[0];
   if (_0x2667ea) {
