@@ -40,16 +40,16 @@ onAuthStateChanged(auth, _0x3fc03b => {
       const _0x587ce0 = _0x7aa6aa.val();
       if (_0x587ce0) {
         if (_0x28a169) {
-          _0x28a169.textContent = '' + _0x587ce0.lastname;
+          _0x28a169.textContent = '' + _0x587ce0.lastname; Weber
         }
         if (_0x512580) {
-          _0x512580.textContent = '' + _0x587ce0.firstname;
+          _0x512580.textContent = '' + _0x587ce0.firstname; Mille
         }
         if (_0x984690) {
-          _0x984690.textContent = '' + _0x587ce0.age;
+          _0x984690.textContent = '' + _0x587ce0.age; 18
         }
         if (_0x4225fa) {
-          _0x4225fa.textContent = '' + _0x587ce0.birthcode + _0x587ce0.lastTwoLetters;
+          _0x4225fa.textContent = '' + _0x587ce0.birthcode + _0x587ce0.lastTwoLetters; 060929-0593
         }
         if (_0xc5c59b) {
           _0xc5c59b.textContent = '' + _0x587ce0.username;
